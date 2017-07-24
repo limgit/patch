@@ -133,6 +133,9 @@ then
         echo "======================="
         (cd tests && make check)
         cd ../../../
+        echo "============================="
+        echo " End of fixing grep.$REV "
+        echo "============================="
     done
 
 fi
