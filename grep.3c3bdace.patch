@@ -1,0 +1,11 @@
+--- Makefile.orig	2017-07-24 07:30:01.069015979 +0000
++++ Makefile	2017-07-24 07:30:15.289016201 +0000
+@@ -1334,7 +1334,7 @@
+   PERL='$(PERL)'				\
+   SHELL='$(SHELL)'				\
+   PATH='$(abs_top_builddir)/src$(PATH_SEPARATOR)'"$$PATH" \
+-  ; $(SHELL) 9>&2
++  ; 9>&2
+ 
+ VERBOSE = yes
+ all: all-am
