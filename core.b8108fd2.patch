@@ -1,5 +1,5 @@
---- Makefile.orig	2017-07-24 06:57:48.196985820 +0000
-+++ Makefile	2017-07-24 07:04:36.984992198 +0000
+--- tests/misc/Makefile.orig	2017-07-24 06:57:48.196985820 +0000
++++ tests/misc/Makefile	2017-07-24 07:04:36.984992198 +0000
 @@ -1079,13 +1079,15 @@
  # containing $src, and passes TESTS_ENVIRONMENT.
  am__check_pre = \

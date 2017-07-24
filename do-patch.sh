@@ -32,7 +32,7 @@ then
     echo "==================="    
     echo " Applying patch... "
     echo "==================="
-    (cd tests && patch -p0 --forward) < ../../../patch/core.61de57cd.patch
+    patch -p0 --forward < ../../../patch/core.61de57cd.patch
     echo "======================="
     echo " Running make check... "
     echo "======================="
@@ -53,7 +53,7 @@ then
     echo "==================="    
     echo " Applying patch... "
     echo "==================="
-    (cd tests && patch -p0 --forward) < ../../../patch/core.2e636af1.patch
+    patch -p0 --forward < ../../../patch/core.2e636af1.patch
     echo "======================="
     echo " Running make check... "
     echo "======================="
@@ -74,7 +74,7 @@ then
     echo "==================="    
     echo " Applying patch... "
     echo "==================="
-    (cd tests/misc && patch -p0 --forward) < ../../../patch/core.b8108fd2.patch
+    patch -p0 --forward < ../../../patch/core.b8108fd2.patch
     echo "======================="
     echo " Running make check... "
     echo "======================="
@@ -95,7 +95,7 @@ then
     echo "==================="    
     echo " Applying patch... "
     echo "==================="
-    (cd tests/misc && patch -p0 --forward) < ../../../patch/core.a860ca32.patch
+    patch -p0 --forward < ../../../patch/core.a860ca32.patch
     echo "======================="
     echo " Running make check... "
     echo "======================="
@@ -127,7 +127,7 @@ then
         echo "==================="    
         echo " Applying patch... "
         echo "==================="
-        (cd tests && patch -p0 --forward) < ../../../patch/grep.$REV.patch
+        patch -p0 --forward < ../../../patch/grep.$REV.patch
         echo "======================="
         echo " Running make check... "
         echo "======================="
