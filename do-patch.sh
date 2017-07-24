@@ -113,7 +113,7 @@ then
     then
         TARGET=grep
     fi
-    ERROR_REVS=(3c3bdace c1cb19fe 8f08d8e2 3220317a 9c45c193 5fa8c7c9)
+    ERROR_REVS=(3c3bdace c1cb19fe 8f08d8e2 3220317a 9c45c193 5fa8c7c9 6d952bee db9d6340 54d55bba)
     for REV in "${ERROR_REVS[@]}"
     do
         echo "======================"
