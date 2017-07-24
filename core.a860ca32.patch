@@ -1,0 +1,16 @@
+--- Makefile.orig	2017-07-24 07:09:28.776996751 +0000
++++ Makefile	2017-07-24 07:10:03.580997294 +0000
+@@ -1024,10 +1024,13 @@
+ # directory for the log if needed.  Stores in $dir the directory
+ # containing $<, and passes the TEST_ENVIRONMENT.
+ am__check_pre = \
++$(am__sh_e_setup);				\
++$(am__vpath_adj_setup) $(am__vpath_adj)		\
+ $(mkdir_p) "$$(dirname $@)";			\
+ if test -f ./$<; then dir=./;			\
+ elif test -f $<; then dir=;			\
+ else dir="$(srcdir)/"; fi;			\
++tst=$$dir$$f;					\
+ $(TESTS_ENVIRONMENT)
+ 
+ 

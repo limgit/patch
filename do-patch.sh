@@ -48,4 +48,40 @@ then
     (cd tests && make check)
     cd ../../../
  
+    echo "======================"
+    echo " Fixing core.b8108fd2 "
+    echo "======================"
+    cd coreutils/b8108fd2/coreutils
+    echo "================="
+    echo " Running make... "
+    echo "================="
+    make
+    echo "==================="    
+    echo " Applying patch... "
+    echo "==================="
+    (cd tests/misc && patch -p0) < ../../../patch/core.b8108fd2.patch
+    echo "======================="
+    echo " Running make check... "
+    echo "======================="
+    (cd tests/misc && make check)
+    cd ../../../
+
+    echo "======================"
+    echo " Fixing core.a860ca32 "
+    echo "======================"
+    cd coreutils/a860ca32/coreutils
+    echo "================="
+    echo " Running make... "
+    echo "================="
+    make
+    echo "==================="    
+    echo " Applying patch... "
+    echo "==================="
+    (cd tests/misc && patch -p0) < ../../../patch/core.a860ca32.patch
+    echo "======================="
+    echo " Running make check... "
+    echo "======================="
+    (cd tests/misc && make check)
+    cd ../../../
+
 fi
